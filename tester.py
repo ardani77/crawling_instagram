@@ -4,7 +4,7 @@ import string
 import emoji
 import csv
 import os
-import pandas as pd
+#import pandas as pd
 L = instaloader.Instaloader()
 
 translator = str.maketrans('', '', string.punctuation)
@@ -79,5 +79,5 @@ while sizeOfFile < 1024*1024*100:
                 print("\n")
     sizeOfFile = getFileSize('dataset.csv')
 
-data = pd.DataFrame({"Account":usernamelist, "Post":captionlist, "Tag":hashtaglist, "Likes":likeslist, "Comments":commentlist})
-print(data)
+#data = pd.DataFrame({"Account":usernamelist, "Post":captionlist, "Tag":hashtaglist, "Likes":likeslist, "Comments":commentlist})
+#print(data)
